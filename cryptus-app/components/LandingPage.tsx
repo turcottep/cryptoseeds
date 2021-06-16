@@ -40,11 +40,11 @@ export default function LandingPage() {
                 </div>
               </p>
             </div>
-            <div className="md:visible w-full sm:mx-0 md:w-full my-4">
+            <div className="hidden md:block w-full sm:mx-0 md:w-full my-4">
               <NameForm />
             </div>
           </div>
-          <div className="flex-shrink w-auto md:w-full min-w-0 min-h-0">
+          <div className="hidden md:block flex-shrink w-auto md:w-full min-w-0 min-h-0">
             <img
               className="w-full flex-1 min-w-0 min-h-0"
               draggable="false"

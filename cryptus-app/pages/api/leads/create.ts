@@ -5,7 +5,7 @@ import { connect_to_db } from "../../../utils/database";
 export default async function (req:NextApiRequest, res: NextApiResponse){
     try{
         const {db} = await connect_to_db()
-        const result = await db.collection("leads").insertOne({
+        const result = await db.collection("leadsCryptoseeds").insertOne({
             email: req.body.email,
             createdAt: new Date(),
         });
