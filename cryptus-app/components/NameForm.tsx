@@ -66,10 +66,10 @@ export default class NameForm extends React.Component<MyProps, MyState> {
               className="form w-full "
               onSubmit={this.handleSubmit}
             >
-              <div className="flex xl:text-xl flex-col lg:flex-row ">
+              <div className="relative flex xl:text-xl flex-col lg:flex-row pb-4">
                 <input
                   type="email"
-                  className="email w-full text-center bg-white lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
+                  className="email w-full text-black text-center bg-rock lg:text-left rounded-t-xl lg:rounded-r-none lg:rounded-l-xl px-2 py-2"
                   name="entry.217945379"
                   id="email"
                   placeholder="Email"
@@ -77,9 +77,14 @@ export default class NameForm extends React.Component<MyProps, MyState> {
                   onChange={this.handleChange}
                   required
                 />
+                <img
+                  className="md:hidden absolute top-8 inset-x-0 z-0 w-full min-w-0 min-h-0"
+                  draggable="false"
+                  src="early_swoosh.svg"
+                />
                 <button
                   type="submit"
-                  className="submit md:px-4 2xl:text-xl text-center whitespace-nowrap bg-dirt text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-2/5 px-2 py-2"
+                  className="submit relative z-10 md:px-4 2xl:text-xl text-center whitespace-nowrap bg-dirt text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-3/5 px-2 py-2"
                 >
                   Get Early Access
                 </button>
