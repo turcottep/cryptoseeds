@@ -77,14 +77,10 @@ export default class NameForm extends React.Component<MyProps, MyState> {
                   onChange={this.handleChange}
                   required
                 />
-                <img
-                  className="md:hidden absolute top-8 inset-x-0 z-0 w-full min-w-0 min-h-0"
-                  draggable="false"
-                  src="early_swoosh.svg"
-                />
+
                 <button
                   type="submit"
-                  className="submit relative z-10 md:px-4 2xl:text-xl text-center whitespace-nowrap bg-dirt text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-3/5 px-2 py-2"
+                  className="submit relative z-10 md:px-4 2xl:text-xl text-center whitespace-nowrap bg-gray-400 text-white font-bold rounded-b-xl lg:rounded-l-none lg:rounded-r-xl w-full lg:w-3/5 px-2 py-2"
                 >
                   Get Early Access
                 </button>
